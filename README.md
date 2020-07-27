@@ -12,5 +12,5 @@ st:
 [Dowload](https://snowfag.0xd.workers.dev/Dotfiles/st.tar.zst)
 
 slstatus:
-[Dowload](https://snowfag.0xd.workers.dev/Dotfiles/dwm.tar.zst)
+[Dowload](https://snowfag.0xd.workers.dev/Dotfiles/slstatus.tar.zst)
 
