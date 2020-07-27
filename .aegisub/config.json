@@ -25,6 +25,9 @@
 			},
 			{
 				"string" : "duplicate -> split"
+			},
+			{
+				"string" : "time/tap"
 			}
 		],
 		"Language" : "en_US",
@@ -36,8 +39,8 @@
 	},
 	"Audio" : {
 		"Auto" : {
-			"Commit" : false,
-			"Focus" : false,
+			"Commit" : true,
+			"Focus" : true,
 			"Scroll" : true
 		},
 		"Cache" : {
@@ -57,32 +60,32 @@
 		"Display" : {
 			"Draw" : {
 				"Cursor Time" : true,
-				"Inactive Comments" : true,
+				"Inactive Comments" : false,
 				"Keyframes in Dialogue Mode" : true,
 				"Keyframes in Karaoke Mode" : true,
-				"Seconds" : false,
-				"Video Position" : false
+				"Seconds" : true,
+				"Video Position" : true
 			},
 			"Waveform Style" : 0
 		},
 		"Display Height" : 200,
 		"Downmixer" : "ConvertToMono",
-		"Drag Timing" : true,
-		"Inactive Lines Display Mode" : 1,
+		"Drag Timing" : false,
+		"Inactive Lines Display Mode" : 3,
 		"Karaoke" : {
 			"Font Face" : "Verdana",
 			"Font Size" : 9
 		},
 		"Lead" : {
-			"IN" : 200,
-			"OUT" : 300
+			"IN" : 100,
+			"OUT" : 350
 		},
 		"Line Boundaries Thickness" : 2,
-		"Link" : true,
+		"Link" : false,
 		"Lock Scroll on Cursor" : false,
 		"Medusa Timing Hotkeys" : false,
 		"Next Line on Commit" : true,
-		"Player" : "ALSA",
+		"Player" : "PulseAudio",
 		"Plays When Stepping Video" : false,
 		"Provider" : "ffmpegsource",
 		"Renderer" : {
@@ -93,11 +96,11 @@
 			}
 		},
 		"Snap" : {
-			"Distance" : 10,
+			"Distance" : 8,
 			"Enable" : false
 		},
 		"Spectrum" : true,
-		"Start Drag Sensitivity" : 3,
+		"Start Drag Sensitivity" : 8,
 		"Track Cursor" : {
 			"Font Face" : ""
 		},
@@ -280,6 +283,13 @@
 		},
 		"Video Dummy" : {
 			"Last Colour" : "rgb(47, 163, 254)"
+		},
+		"Visual Tools" : {
+			"Highlight Primary" : "rgb(255, 169, 40)",
+			"Highlight Secondary" : "rgb(255, 253, 185)",
+			"Lines Primary" : "rgb(187, 0, 0)",
+			"Lines Secondary" : "rgb(106, 32, 19)",
+			"Shaded Area Alpha" : 0.5
 		}
 	},
 	"Limits" : {
@@ -366,7 +376,7 @@
 		},
 		"Character Limit" : 40,
 		"Default Resolution" : {
-			"Auto" : true,
+			"Auto" : false,
 			"Height" : 720,
 			"Width" : 1280
 		},
@@ -428,7 +438,8 @@
 		}
 	},
 	"Timing" : {
-		"Default Duration" : 2000
+		"Default Duration" : 3000,
+		"Tap To Time" : false
 	},
 	"Tool" : {
 		"Colour Picker" : {
@@ -557,7 +568,7 @@
 				"Y" : -1
 			},
 			"Maximized" : false,
-			"Preview Text" : "Aegisub\\N0123 月語"
+			"Preview Text" : "Aegisub\\N0123 日本語"
 		},
 		"Style Manager" : {
 			"Last" : {
@@ -586,6 +597,10 @@
 					"OUT" : true
 				}
 			},
+			"Lead" : {
+				"IN" : 100,
+				"OUT" : 350
+			},
 			"Only Selection" : false,
 			"Threshold" : {
 				"Adjacent Gap" : 300,
@@ -601,14 +616,15 @@
 				"X" : -1,
 				"Y" : -1
 			},
-			"Maximized" : false
+			"Maximized" : false,
+			"Skip Whitespace" : true
 		},
 		"Visual" : {
 			"Autohide" : false
 		}
 	},
 	"Version" : {
-		"Last Version" : 8947,
+		"Last Version" : 9148,
 		"Next Check" : 0
 	},
 	"Video" : {
@@ -624,18 +640,17 @@
 		"Dummy" : {
 			"FPS" : 23.975999999999999091,
 			"Last" : {
-				"Height" : 480,
+				"Height" : 720,
 				"Length" : 40000,
-				"Width" : 640
+				"Width" : 1280
 			},
 			"Pattern" : false
 		},
-		"Force BT.601" : true,
 		"Last Script Resolution Mismatch Choice" : 2,
 		"Open Audio" : true,
 		"Overscan Mask" : false,
 		"Provider" : "ffmpegsource",
-		"Script Resolution Mismatch" : 1,
+		"Script Resolution Mismatch" : 0,
 		"Slider" : {
 			"Fast Jump Step" : 10,
 			"Show Keyframes" : true
