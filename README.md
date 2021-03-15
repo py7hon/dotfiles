@@ -1,16 +1,5 @@
 # personal dotfiles
 
-os: Arch Custom Runit
+os: ArchLinux
 
-Screenshots:
-![](https://files.catbox.moe/0mv5nw.png)
-
-dwm:
-[Dowload](https://snowfag.0xd.workers.dev/Dotfiles/dwm.tar.zst)
-
-st:
-[Dowload](https://snowfag.0xd.workers.dev/Dotfiles/st.tar.zst)
-
-slstatus:
-[Dowload](https://snowfag.0xd.workers.dev/Dotfiles/slstatus.tar.zst)
-
+![](https://files.catbox.moe/vmopfq.png)

@@ -1,0 +1,9 @@
+default:
+  image: archlinux:latest
+  script:
+    - chmod +x ./files/buildscript.sh
+    - PROFILE=/usr/share/archiso/configs/releng ./files/buildscript.sh
+  artifacts:
+    paths:
+      - public
+
